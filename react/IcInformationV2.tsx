@@ -1,0 +1,36 @@
+/* eslint-disable */ // @ts-nocheck @ts-ignore
+import * as React from 'react';
+const SvgComponent = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <mask
+      id="prefix__a"
+      width={20}
+      height={20}
+      x={2}
+      y={2}
+      maskUnits="userSpaceOnUse"
+      style={{
+        maskType: 'alpha',
+      }}
+    >
+      <g fill="#333">
+        <path d="M13.25 7.75C13.25 8.438 12.688 9 12 9s-1.25-.562-1.25-1.25S11.313 6.5 12 6.5s1.25.563 1.25 1.25M11 10a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5v4h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V16a.5.5 0 0 0-.5-.5H13v-5a.5.5 0 0 0-.5-.5z" />
+        <path
+          fillRule="evenodd"
+          d="M2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0M12 4.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15"
+          clipRule="evenodd"
+        />
+      </g>
+    </mask>
+    <g mask="url(#prefix__a)">
+      <path fill="#333" d="M0 0h24v24H0z" />
+    </g>
+  </svg>
+);
+export default SvgComponent;

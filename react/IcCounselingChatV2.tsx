@@ -1,0 +1,36 @@
+/* eslint-disable */ // @ts-nocheck @ts-ignore
+import * as React from 'react';
+const SvgComponent = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <mask
+      id="prefix__a"
+      width={20}
+      height={19}
+      x={2}
+      y={3}
+      maskUnits="userSpaceOnUse"
+      style={{
+        maskType: 'alpha',
+      }}
+    >
+      <g fill="#333">
+        <path d="M9 9.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M16 8.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0M7.352 11.623a.75.75 0 0 1 1.025-.271c.32.18.667.32 1.014.44.659.231 1.573.458 2.609.458s1.95-.227 2.61-.457c.346-.122.693-.26 1.013-.441a.75.75 0 1 1 .755 1.296c-.4.233-.838.408-1.273.56-.77.27-1.855.542-3.105.542a9.5 9.5 0 0 1-3.105-.542 7.4 7.4 0 0 1-1.272-.56.75.75 0 0 1-.27-1.025" />
+        <path
+          fillRule="evenodd"
+          d="M5.5 3.5a3 3 0 0 0-3 3V15a3 3 0 0 0 3 3h2v2.445c0 1.265 1.47 1.962 2.45 1.16L14.357 18H18.5a3 3 0 0 0 3-3V6.5a3 3 0 0 0-3-3zm-1 3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1H14a1 1 0 0 0-.633.226L9.5 19.39V17a1 1 0 0 0-1-1h-3a1 1 0 0 1-1-1z"
+          clipRule="evenodd"
+        />
+      </g>
+    </mask>
+    <g mask="url(#prefix__a)">
+      <path fill="#333" d="M0 0h24v24H0z" />
+    </g>
+  </svg>
+);
+export default SvgComponent;
