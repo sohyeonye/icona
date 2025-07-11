@@ -31,12 +31,6 @@ generate({
             name: "convertColors",
             params: { currentColor: true },
           },
-          {
-            name: "prefixIds",
-            params: {
-              prefix: `yds2-icon-`,
-            },
-          },
         ],
       },
     },
